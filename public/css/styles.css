@@ -1,0 +1,292 @@
+/* General Styles */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+input {
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+body {
+    line-height: 1.4;
+    color: #333333;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #777;
+}
+
+input {
+    border: 1px solid #eeeeee;
+    padding: 12px;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    padding: 14px;
+    background-color:#25d366;
+    border: none;
+    color: white;
+    font-size: 16px;
+    transition: background .3s ease;
+    font-weight: bolder;
+    border-radius: 50%;
+}
+
+.first-button{
+  cursor: pointer;
+  padding: 14px;
+  background-color:#25d366;
+  border: none;
+  color: white;
+  font-size: 16px;
+  transition: background .3s ease;
+  font-weight: bolder;
+  border-radius: 10px;
+
+}
+img{
+  height:100px;
+  width: 250px;
+}
+button:hover {
+    background: #6b47b8;
+}
+
+button:disabled {
+    cursor: default;
+    background: #7c5cbf94;
+}
+
+/* Join Page Styles */
+
+.centered-form {
+    background: #333744;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.centered-form__box {
+    box-shadow: 0px 0px 17px 1px #1D1F26;
+    background: #F7F7FA;
+    padding: 24px;
+    width: 250px;
+}
+
+.centered-form button {
+    width: 100%;
+}
+
+.centered-form input {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+/* Chat Page Layout */
+
+.chat {
+    /* flex-shrink: 0; */
+    display: flex;
+    /* flex-shrink: 0; */
+    /* flex-basis: 0; */
+}
+
+.chat__sidebar {
+  height: 100vh;
+  color: white;
+  background: #333744;
+  width: 225px;
+}
+
+/* Chat styles */
+
+.chat__main {
+    flex-grow:1;
+    max-height: 100vh;
+    background-image: url("https://i.imgur.com/TnNwdvV.jpg");
+    flex-direction: column;
+    display: flex;
+}
+
+.chat__messages {
+    flex-grow: 1;
+    padding: 24px 24px 0 24px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    overflow-x: hidden;
+}
+
+/* Message Styles */
+.message-container{
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.message {
+    /* width: 50px; */
+    margin-bottom: 16px;
+    padding-left: 16px;
+    background-color: #DCF8C6;
+    /* width: 50%; */
+    max-width: 300px;
+    min-width: 100px;
+    /* flex-flow: row; */
+    border-radius: 10px;
+    /* flex-grow: 0; */
+    /* display: flex; */
+    /* flex-shrink: 12; */
+    /* flex-basis: 100px; */
+    /* flex-shrink: 0; */
+    /* flex-basis: auto; */
+}
+
+.message {}
+
+.message {}
+
+.message {}
+
+.message {}
+
+.message__name {
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 8px;
+}
+
+.message__meta {
+    color: #777;
+    font-size: 14px;
+}
+
+.message a {
+    color: #0070CC;
+}
+
+/* Message Composition Styles */
+
+.compose {
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 16px;
+    padding: 24px;
+    /* flex-direction: row; */
+}
+
+.compose form {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 6px;
+}
+
+.compose input {
+    border: 1px solid #eeeeee;
+    width: 100%;
+    padding: 12px;
+    margin: 0 10px 0 0;
+    flex-grow: 1;
+}
+
+.compose button {
+    font-size: 14px;
+}
+
+/* Chat Sidebar Styles */
+
+.room-title {
+    font-weight: 400;
+    font-size: 22px;
+    background: #2c2f3a;
+    padding: 24px;
+}
+
+.list-title {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 4px;
+    padding: 12px 24px 0 24px;
+}
+
+.users {
+    list-style-type: none;
+    font-weight: 300;
+    padding: 12px 24px 0 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  .message__name {
+      font-weight: 600;
+      font-size: 20px;
+      margin-right: 8px;
+  }
+  .main{
+    font-size: 23px;
+  }
+  .message__meta{
+    font-size: 19px;
+  }
+  .chat__main {
+  }
+  .chat__sidebar{
+    width:0;
+  }
+  a{
+    font-size: 23px;
+  }
+  .centered-form__box{
+    width: 350px;
+    font-size: 20px;
+  }
+  label{
+    font-size: 20px;
+  }
+  input{
+    font-size: 20px;
+  }
+  img{
+    height:100px;
+    width: 350px;
+  }
+
+}
